@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сериалы</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/serials.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <section class="header__inner">
+                <div class="logo"><a href="main.html"><img src="assets/img/logo.svg" alt="logo"></a></div>
+                <nav class="nav">
+                  <ul>
+                    <li><a href="moovies.html">Фильмы</a></li>
+                    <li><a href="serials.html">Сериалы</a></li>
+                    <li><a href="lk.html">Личный кабинет</a></li>
+                    <li><a href="pay.html">Оплата</a></li>
+                    <li>
+                      <form method="post">
+                        <input type="text" placeholder="Поиск" class="find">
+                      </form>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="burger">
+                  <span></span>
+              </div>
+            </section>
+        </header>
+
+        <main class="main">
+            <section class="main__section1">
+                <div class="main__section1-left"><img src="assets/img/3/1.png" alt="1"></div>
+                <div class="main__section1-right">
+                    <div class="main__section1-right-text1">Во все тяжкие</div>
+                    <div class="main__section1-right-text2">Год: 2008 (5 сезонов)</div>
+                    <div class="main__section1-right-text2">Страна: <span class="span1">США</span></div>
+                    <div class="main__section1-right-text2">Школьный учитель химии Уолтер Уайт узнаёт, что болен раком лёгких.<br> Учитывая сложное финансовое состояние дел семьи, а также перспективы,<br> Уолтер решает заняться изготовлением метамфетамина. Для этого он<br> привлекает своего бывшего ученика Джесси Пинкмана, когда-то исключённого<br> из школы при активном содействии Уайта. Пинкман сам занимался варкой<br> мета, но накануне, в ходе рейда УБН, он лишился подельника и лаборатории.</div>
+                    <div class="main__section1-right-text2">Оценка: <span class="span1">8.9</span></div>
+                    <div class="main__section1-right-text2">Режиссер: Мишель Макларен, Адам Берншейтн и др.</div>
+                    <div class="main__section1-right-text2">Актеры: Брайан Крэнстон, Анна Ганн, Аарон Пол и др.</div>
+                </div>
+            </section>
+
+            <section class="main__section2">
+                <div class="zagolovok">Список похожих фильмов</div>
+                <div class="content1">
+                    <div class="content-block1">
+                        <div class="content-block-img1"><img src="assets/img/3/2.png" alt="2"></div>
+                        <div class="content-block-text1">Декстер</div>
+                    </div>
+                    <div class="content-block1">
+                        <div class="content-block-img1"><img src="assets/img/3/3.png" alt="3"></div>
+                        <div class="content-block-text1">Далласский клуб</div>
+                    </div>
+                    <div class="content-block1">
+                        <div class="content-block-img1"><img src="assets/img/3/4.png" alt="4"></div>
+                        <div class="content-block-text1">Фарго</div>
+                    </div>
+                    <div class="content-block1">
+                        <div class="content-block-img1"><img src="assets/img/3/5.png" alt="5"></div>
+                        <div class="content-block-text1">Сопрано</div>
+                    </div>
+                    <div class="content-block1">
+                        <div class="content-block-img1"><img src="assets/img/3/6.png" alt="6"></div>
+                        <div class="content-block-text1">Дурман</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <section class="footer-icons">
+                <div class="footer-icon"><img src="assets/img/vk.png" alt="vk"></div>
+                <div class="footer-icon"><img src="assets/img/tg.png" alt="tg"></div>
+                <div class="footer-icon"><img src="assets/img/tw.png" alt="tw"></div>
+            </section>
+        </footer>
+
+    </div>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+</body>
+</html>

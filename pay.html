@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/pay.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <section class="header__inner">
+              <div class="logo"><a href="main.html"><img src="assets/img/logo.svg" alt="logo"></a></div>
+              <nav class="nav">
+                <ul>
+                  <li><a href="moovies.html">Фильмы</a></li>
+                  <li><a href="serials.html">Сериалы</a></li>
+                  <li><a href="lk.html">Личный кабинет</a></li>
+                  <li><a href="pay.html">Оплата</a></li>
+                  <li>
+                    <form method="post">
+                      <input type="text" placeholder="Поиск" class="find">
+                    </form>
+                  </li>
+                </ul>
+              </nav>
+              <div class="burger">
+                <span></span>
+            </div>
+            </section>
+        </header>
+
+        <main class="main">
+            <section class="main__section1">
+                <div class="zagolovok">Тарифы</div>
+                <div class="tarifs">
+                    <div class="tarifs-left">
+                        <div class="tarifs-left-text1">Базовый</div>
+                        <div class="tarifs-left-text2">Смотрите любиые фильмы и сериалы без рекламы</div>
+                        <div class="tarifs-left-text2">Доступ к библиотеке всех фильмов Illuminos</div>
+                        <div class="tarifs-left-text2">Семейный доступ с любых устройств (до 3-х человек)</div>
+                        <button class="tarifs-left-price">199р/мес.</button>
+                    </div>
+                    <div class="tarifs-left">
+                        <div class="tarifs-left-text1">Профессиональный</div>
+                        <div class="tarifs-left-text2">Смотрите любиые фильмы и сериалы без рекламы</div>
+                        <div class="tarifs-left-text2">Доступ к библиотеке всех фильмов Illuminos</div>
+                        <div class="tarifs-left-text2">Семейный доступ с любых устройств (до 5-ти человек)</div>
+                        <button class="tarifs-left-price">299р/мес.</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__section2">
+                <div class="zagolovok1">Мы работаем с:</div>
+                <div class="main__section2-img"><img src="assets/img/sbp.png" alt="sbp"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <section class="footer-icons">
+                <div class="footer-icon"><img src="assets/img/vk.png" alt="vk"></div>
+                <div class="footer-icon"><img src="assets/img/tg.png" alt="tg"></div>
+                <div class="footer-icon"><img src="assets/img/tw.png" alt="tw"></div>
+            </section>
+        </footer>
+
+    </div>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+      </script>
+</body>
+</html>

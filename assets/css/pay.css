@@ -1,0 +1,243 @@
+.wrapper{
+    flex-grow: 1;
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+.header__inner{
+    width: 90%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.nav ul{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+li a {
+	color: #fff; /* Цвет обычной ссылки */
+    position: relative;
+}
+
+li a:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: #E51B20; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+li a:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: #E51B20; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+
+
+.find{
+    width: 180px;
+    height: 40px;
+    background-color: #FFF;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #00000060;
+    font-family: 'MontserratAlternates-Medium';
+}
+
+
+/* меню-бургер */
+.open{
+    display: flex !important;
+}
+
+.burger{
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+
+.burger span{
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #FAF6F2;
+}
+
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #FAF6F2;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before { top: 0 }
+
+.burger::after { bottom: 0 }
+
+.burger.active span { transform: scale(0) }
+
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+@media (max-width: 1024px) {
+
+    .burger { display: flex }
+
+    .nav{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: #000;
+        animation: burgerAnimation 0.4s;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+.main__section1{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 109px;
+}
+
+.zagolovok{
+    text-align: center;
+    font-family: 'MontserratAlternates-Medium';
+    font-size: 16px;
+}
+
+.tarifs{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    margin-top: 35px; 
+}
+
+.tarifs-left{
+    width: 600px;
+    height: auto;
+    border: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.tarifs-left-text1{
+    font-family: 'MontserratAlternates-Medium';
+    font-size: 16px;
+    color: #E51B20;
+    text-align: center;
+}
+
+.tarifs-left-text2{
+    padding-top: 7px;
+    text-align: center;
+}
+
+.tarifs-left-price{
+    margin: 0 auto;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #000;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .tarifs{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+.main__section2{
+    margin-top: 40px;
+}
+
+.zagolovok1{
+    text-align: center;
+    font-family: 'MontserratAlternates-Medium';
+    font-size: 16px;
+}
+
+.main__section2-img{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+
+.footer{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 333px;
+    background-color: #000;
+}
+
+.footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
